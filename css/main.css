@@ -1,0 +1,188 @@
+/*
+ * Ingresa el CSS del proyecto en este archivo
+ */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*outline: 1px solid red;*//*hace las lineas para ver las divisiones*/
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  /* Establece la fuente de Google aquí */
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  font-size: 1.5vw;
+  line-height: 1.71429;
+  background-color: #fff;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  color: #373B47;
+  text-decoration: none;
+}
+
+header{
+  position: fixed;
+  background: white;
+  width: 100%;
+  top: 0;
+}
+
+a:hover {
+  color: #E95853;
+}
+
+.link{
+  font-weight: 700;/*pork 700*/
+  padding: 21px;
+  display: inline-block;
+}
+
+.text-home{
+  font-size: 53px;
+}
+
+.btn-home{
+  background: #2ECC71;
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 63px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+#products{
+  background: white;
+  text-align: center;
+  color: black;
+  padding: 70px 7px;
+}
+
+.columna-3 img{
+  width: 200px;
+  border-radius: 20%;
+  border: 5px solid  white;
+}
+
+footer{
+  text-align: center;
+  height: 70px;
+  background: #373B47;
+  color: white;
+  padding-top: 7px;
+}
+
+.modal{
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(18, 102, 224, 0.3);
+  top: 0;
+  left:0;
+  text-align: center;
+}
+
+.modal_img{
+  position: relative;
+  width: 50%;
+  height: 70vh;
+  margin: 20px;
+  text-align: center;
+  border-radius: 5%;
+  }
+
+.modal_boton{
+  width: 50px;
+  height: 50px;
+  color: red;
+  font-weight: bold;
+  background: transparent;
+  position: absolute;
+  z-index: 100;
+  right: 350px;
+  top: 30px;
+  font-size: 50px;
+  cursor: pointer;/*para cambie de */
+}
+
+/*Contenedor Flexbox*/
+.flex-container{
+  display: flex;
+}
+
+/*Menu*/
+.menu{
+background-color: white;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+}
+.menu .flex-container{
+  justify-content: flex-start;
+}
+.logo-container{
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.flex-container .logo{
+  width: 70px;
+  height: 70px;
+}
+
+/*Home*/
+#home{
+  height: 600px;
+  margin-top: 70px;
+  background-image: url(../assets/images/bg-home.jpg);/*Nuestra Imagen de fondo*/
+  background-position: center;/**/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: whitesmoke;
+}
+
+.text-home{
+  font-size: 2.4em;
+}
+
+/*Services*/
+#services{
+  background: #F17C72;
+  text-align: center;
+  color: #fff;
+  padding: 70px 7px;
+}
+
+#services.flex-container{
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box-services{
+
+  font-weight: bold;
+}
+
+/*products*/
